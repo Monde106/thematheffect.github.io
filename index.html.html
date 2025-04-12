@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Math Effect Tutoring</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5faff;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(90deg, #000080, #004080);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .logo {
+      max-width: 120px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section:nth-child(even) {
+      background-color: #ffffff;
+    }
+    h2 {
+      color: #000080;
+    }
+    .subjects ul {
+      list-style-type: square;
+    }
+    .gallery img {
+      max-width: 200px;
+      margin: 10px;
+      border-radius: 10px;
+      border: 2px solid #004080;
+    }
+    .contact-btn {
+      background-color: #ffcc00;
+      color: #000;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 25px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .upload-section input[type="file"] {
+      margin-top: 10px;
+    }
+    form label {
+      font-weight: bold;
+    }
+    form input, form textarea, form select {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0 1rem 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #000080;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Business Logo" class="logo" />
+    <h1>The Math Effect Tutoring</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#vision">Vision & Mission</a>
+      <a href="#subjects">Modules</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#upload">Materials</a>
+      <a href="#enroll">Enroll</a>
+      <a href="https://wa.me/27XXXXXXXXX" target="_blank">Contact</a>
+    </nav>
+  </header>
+
+  <!-- New Introduction Section with updated background -->
+  <div class="section" style="background: linear-gradient(135deg, #4e73df, #36b39b); text-align: center; color: white;">
+    <h2> Welcome to The Math Effect Tutoring! </h2>
+    <p>
+      We specialize in high-quality Engineering modules tutoring for university students. Our goal is to simplify complex engineering concepts and help students excel in their studies.
+    </p>
+    <h3>📌 Why Choose The Math Effect?</h3>
+    <ul style="text-align:left; margin: 0 auto; max-width: 500px;">
+      <li>✅ Expert tutoring for Engineering Modules</li>
+      <li>✅ Clear explanations & problem-solving strategies</li>
+      <li>✅ Provide resources eg Textbooks, notes, question papers etc.</li>
+      <li>✅ Affordable to all individuals of all backgrounds & flexible online sessions</li>
+    </ul>
+  </div>
+
+  <div class="section" id="about">
+    <h2>About Us</h2>
+    <p>
+      The Math Effect Tutoring was found by Mr MI Duma and Mr A Nyekana with an aim of providing high-quality tutoring, personalized support for
+      engineering students as there are students who end up dropping out because of the diffuculty in understanding these 
+      engineering principles. We offer online tutoring and believe in building understanding, not just marks.
+    </p>
+    <p><strong>Registration Fee:</strong> R0.00 </p>
+  </div>
+
+  <div class="section" id="vision">
+    <h2>Our Vision</h2>
+    <p>To be a leading source of excellence in Engineering education through innovative and student-centered tutoring that inspires confidence and success in every learner.</p>
+
+    <h2>Our Mission</h2>
+    <p>Our mission is to provide accessible, high-quality tutoring to Engineering students by equipping them with strong foundational knowledge, practical problem-solving skills, and a passion for lifelong learning.</p>
+  </div>
+
+  <div class="section subjects" id="subjects">
+    <h2>Modules Offered</h2>
+    <ul>
+      <li>Engineering Mathematics</li>
+      <li>Engineering Physics</li>
+      <li>Engineering Chemistry</li>
+      <li>Electrotechnology / Electrical Engineering</li>
+    </ul>
+  </div>
+
+  <div class="section gallery" id="gallery">
+    <h2>Gallery</h2>
+    <p>Images of learners, sessions, or notes</p>
+    <img src="https://via.placeholder.com/200x150?text=Tutoring+1" alt="Tutoring 1" />
+    <img src="https://via.placeholder.com/200x150?text=Tutoring+2" alt="Tutoring 2" />
+  </div>
+
+  <div class="section upload-section" id="upload">
+    <h2>Upload Learning Material</h2>
+    <form>
+      <label for="file">Choose a file:</label><br />
+      <input type="file" id="file" name="file" /><br />
+      <p><i>(Feature to be developed – backend needed)</i></p>
+    </form>
+  </div>
+
+  <div class="section" id="enroll">
+    <h2>Student Enrollment Form</h2>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="module">Module:</label>
+      <select id="module" name="module">
+        <option value="Engineering Mathematics">Engineering Mathematics</option>
+        <option value="Engineering Physics">Engineering Physics</option>
+        <option value="Engineering Chemistry">Engineering Chemistry</option>
+        <option value="Electrotechnology">Electrotechnology / Electrical Engineering</option>
+      </select>
+
+      <label for="message">Additional Notes:</label>
+      <textarea id="message" name="message" rows="4" placeholder="e.g., preferred times, topics struggling with..."></textarea>
+
+      <button type="submit">Submit Enrollment</button>
+    </form>
+    <p><i>(Form processing to be added – currently non-functional)</i></p>
+  </div>
+
+  <div class="section" style="text-align:center;">
+    <a href="https://wa.me/27639567523" class="contact-btn" target="_blank">
+      📞 Chat with us on WhatsApp
+    </a>
+  </div>
+
+  <footer style="text-align:center; padding:1rem; background:#e6f9f0; color:#555;">
+    &copy; 2025 The Math Effect Tutoring. All rights reserved.
+  </footer>
+</body>
+</html>
+
